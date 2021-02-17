@@ -9,7 +9,7 @@ Ano 1700 = século 17 -->
 
 
 function seculoAno($ano){
-
+$seculo = 0;
             if($ano > 0 && $ano < 9999){
 
         if($ano % 10 >= 1 && $ano % 10 < 9){
@@ -20,6 +20,7 @@ function seculoAno($ano){
               $seculo = $ano / 100;
         }
         $seculo = number_format($seculo, 0, '.', '');
+                        
         echo "Ano ".$ano." = século ".$seculo;
      
      
@@ -29,7 +30,7 @@ function seculoAno($ano){
     }else{
         echo "Ano deve estar entre 1 e 9999";
     }
-
+ //Return $seculo;
 
 }
 
